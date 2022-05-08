@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <!-- Forma simples <video src="data/video.mp4" width="500" controls></video> -->
+    <video controls width="500">  <!-- para adicionar uma thumb basta utilizar poster="" e colocar uma imagem -->
+        <source src="data/video.webm" type="video/webm">
+        <source src="data/video.m4v" type="video/mp4">
+        <source src="data/video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/kS2AffdUYXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/700759709?h=f1fb19cabb&color=333333&title=0&byline=0&portrait=0" width="500" height="213" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

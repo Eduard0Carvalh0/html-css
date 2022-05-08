@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="data/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="data/media.png" type="image/png">
+        <img src="data/grande.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <!--<audio src="data/thunder.mp3" controls autoplay></audio> Maneira simples de se colocar -->
+    <!-- MP3, WAV e OGG -->
+    <audio preload="metadata" controls loop>
+        <source src="data/thunder.mp3" type="audio/mpeg">
+        <source src="data/thunder.ogg" type="audio/ogg">
+        <source src="data/thunder.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio, clique <a href="data/thunder.mp3">aqui</a> se deseja baixar</p>
+    </audio>
+</body>
+</html>
